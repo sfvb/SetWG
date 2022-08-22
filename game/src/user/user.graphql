@@ -1,0 +1,14 @@
+type Query {
+  users(filters: UserFilters): [User]
+  user(id: String!): User
+  me: User
+  findOneOrCreate(externalId: String!): User
+}
+type User {
+  id: String
+  username: String
+}
+
+input UserFilters {
+  nameSearch: String
+}

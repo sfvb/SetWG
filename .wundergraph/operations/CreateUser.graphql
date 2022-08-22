@@ -1,0 +1,5 @@
+mutation CreateUser($externalId: String!, $username: String!) {
+  db_createOneuser(data: { externalId: $externalId, username: $username }) {
+    externalId
+  }
+}

@@ -1,0 +1,25 @@
+type Cardset {
+  id: String,
+  cards: [Card],
+}
+
+input CreateCardsetInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateCardsetInput {
+  id: Int!
+}
+
+type Query {
+  cardsets: [Cardset]!
+  cardset(id: Int!): Cardset
+  draw: [Card]
+}
+
+type Mutation {
+  createCardset: Cardset!
+  updateCardset(updateCardsetInput: UpdateCardsetInput!): Cardset!
+  removeCardset(id: Int!): Cardset
+}

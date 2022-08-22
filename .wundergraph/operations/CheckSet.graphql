@@ -1,0 +1,8 @@
+mutation CheckSet(
+  $setInput: logic_SetInput!
+  $userId: String! @fromClaim(name: NAME)
+) {
+  logic_checkSet(setInput: $setInput, playerId: $userId) {
+    id
+  }
+}

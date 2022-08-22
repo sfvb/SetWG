@@ -1,0 +1,5 @@
+mutation PauseGame($gameId: String!, $userId: String! @fromClaim(name: NAME)) {
+  logic_pauseGame(gameId: $gameId, playerId: $userId) {
+    id
+  }
+}

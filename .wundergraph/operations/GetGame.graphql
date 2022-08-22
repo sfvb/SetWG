@@ -1,0 +1,20 @@
+query GetGame($id: String!) {
+  db_findFirstgame(where: { id: { equals: $id } }) {
+    id
+    cardspot {
+      card_number
+      card {
+        id
+        amount
+        color
+        shape
+      }
+    }
+    score {
+      user {
+        username
+      }
+      score
+    }
+  }
+}

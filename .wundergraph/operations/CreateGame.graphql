@@ -1,0 +1,5 @@
+mutation CreateGame($name: String!, $userId: String! @fromClaim(name: NAME)) {
+  logic_createGame(createGameInput: { ownerId: $userId, name: $name }) {
+    id
+  }
+}

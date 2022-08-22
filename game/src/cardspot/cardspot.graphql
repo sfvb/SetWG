@@ -1,0 +1,26 @@
+type Cardspot {
+  # Example field (placeholder)
+  id: String
+  card_number: Int
+  card: Card
+}
+
+input CreateCardspotInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateCardspotInput {
+  id: Int!
+}
+
+type Query {
+  cardspots: [Cardspot]!
+  cardspot(id: String!): Cardspot
+}
+
+type Mutation {
+  createCardspot(createCardspotInput: CreateCardspotInput!): Cardspot!
+  updateCardspot(updateCardspotInput: UpdateCardspotInput!): Cardspot!
+  removeCardspot(id: Int!): Cardspot
+}

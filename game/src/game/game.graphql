@@ -1,0 +1,36 @@
+type Game {
+  id: String
+  name: String
+  gamespots: [Cardspot]
+}
+
+input CreateGameInput {
+  name: String
+  ownerId: String
+}
+
+input SetInput {
+  id: String!
+  spots: [Int]!
+}
+input UpdateGameInput {
+  id: Int!
+}
+
+type Query {
+  games: [Game]!
+  game(id: String!): Game
+}
+
+type Mutation {
+  createGame(createGameInput: CreateGameInput!): Game!
+  updateGame(updateGameInput: UpdateGameInput!): Game!
+  removeGame(id: String!): Game
+  checkSet(setInput: SetInput!, playerId: String): Game!
+  stopGame: Int!
+  pauseGame(gameId: String!, playerId: String!): Game!
+}
+
+type Subscription {
+  watchGame: String!
+}

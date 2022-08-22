@@ -1,0 +1,5 @@
+query GetUser($externalId: String!) {
+    db_findFirstuser(where: { externalId: { equals: $externalId } }){
+        username
+    }
+}
