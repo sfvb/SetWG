@@ -14,10 +14,14 @@ The new Massive Multiplayer Set Game using Wundergraph
 
 ### 2. Install & Start
 
-Install the dependencies and run the complete example in one command:
+Install the dependencies and run the complete example with the following commands:
 
 ```shell
-npm install && npm start
+npm install
+cd game
+npm install
+cd ..
+npm start
 ```
 
 ### 3. Use the application
