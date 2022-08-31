@@ -1,0 +1,118 @@
+.redcircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f00;
+}
+
+.redsquare {
+    width: 50px;
+    height: 50px;
+    background: #f00;
+}
+
+.redtriangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #f00;
+}
+
+
+.bluecircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(68, 0, 255);
+}
+
+.bluesquare {
+    width: 50px;
+    height: 50px;
+    background: rgb(68, 0, 255);
+}
+
+.bluetriangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(68, 0, 255);
+}
+
+.greencircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(0, 184, 40);
+}
+
+.greensquare {
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 184, 40);
+}
+
+.greentriangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(0, 184, 40);
+}
+
+.symbol {
+    margin: 0.8rem;
+}
+
+.card {
+    width: 144px;
+    height: 200px;
+    border-radius: 2%;
+    border: 2px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+
+}
+
+.card:hover {
+    background-color: #aaaaaa;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    border-bottom: 2px solid #000;
+}
+
+.selected{
+    background-color: #bfbfbf;
+}
+
+.WIP{
+    background-color: #f00;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00fafa;
+    padding: 10px;
+}

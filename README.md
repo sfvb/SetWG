@@ -7,10 +7,11 @@ The new Massive Multiplayer Set Game using Wundergraph
 
 1. Go to [Auth0](https://auth0.com/) and create a new application of type "Regular Web Application"
 2. Skip the Quickstart
-3. Copy the `Issuer`, `Client ID` and `Client Secret` to the clipboard
-4. Rename the `.env.example` file to `.env`
-5. Paste the credentials into the `.env` file
-6. Set the Callback URL on Auth0 to http://localhost:9991/app/main/auth/cookie/callback/auth0
+3. Set the Callback URL on Auth0 to http://localhost:9991/app/main/auth/cookie/callback/auth0
+4. Copy the `Issuer`, `Client ID` and `Client Secret` to the clipboard
+5. Rename the `.env.example` file to `.env`
+6. Paste the credentials into the `.env` file
+
 
 ### 2. Install & Start
 
@@ -18,9 +19,6 @@ Install the dependencies and run the complete example with the following command
 
 ```shell
 npm install
-cd game
-npm install
-cd ..
 npm start
 ```
 

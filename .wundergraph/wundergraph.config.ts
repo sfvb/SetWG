@@ -71,7 +71,7 @@ configureWunderGraphApplication({
     },
     {
       templates: [new NextJsTemplate()],
-      path: "../components/generated",
+      path: "../src/client/components/generated",
     },
   ],
   cors: {
@@ -100,7 +100,9 @@ configureWunderGraphApplication({
           clientSecret: new EnvironmentVariable("AUTH0_CLIENT_SECRET"),
         }),
       ],
-      authorizedRedirectUris: ["http://localhost:3000"],
+      authorizedRedirectUris: [
+        "http://localhost:3000",
+      ],
     },
   },
 });

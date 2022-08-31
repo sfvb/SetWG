@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.server.json",
+  "exclude": ["node_modules", "dist", "**/*spec.ts","src/client","src/pages",".next",".wundergraph","components","game"]
+}
